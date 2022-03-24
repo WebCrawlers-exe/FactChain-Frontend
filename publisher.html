@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FactChain</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/Logo.png" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/form.css">
+
+    <!-- importing font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&family=Poppins:wght@400;500;600&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <!-- nav -->
+    <nav class="navbar" id="navbar">
+      <ul class="navLinks">
+        <li>
+          <a href="./index.html"><span class="home">HOME</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="home">ABOUT</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="home">REFERENCES</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- CONTAINER -->
+    <div class="element1">
+        <div class="LeftSide">
+            <form class="pubForm" autocomplete="on">
+                <h1>For Publishers</h1><br>
+                <input type="text" placeholder="Publisher Name" required><br>
+                <input type="number" placeholder="MPN ID" required><br>
+                <input type="text" placeholder="Title" required><br>
+                <textarea placeholder="Description of the Article" required></textarea><br>
+                <input name ="image" type="file" required>
+                <label for="image" style="color:white;">(*jpeg,*png or *jpg formats only)</label><br>
+                <input type="submit" id = "submit" value="Submit">
+            </form>
+            <button type="button" class="user">Not a Publisher?</button>
+        </div>
+
+        <div class="rightSide">
+            <img src="./assets/images/Logo.png" height="400px">
+            <div class="walletAddress">
+                <div class="head">Your wallet Address</div>
+                <div class="address">0x08c033736AC63454b66E33DFa321a9E54e14474E</div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

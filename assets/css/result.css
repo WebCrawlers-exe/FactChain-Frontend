@@ -1,0 +1,42 @@
+.result{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border:2px solid white;
+    width:90vw;
+    margin:2rem;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:2rem;
+    min-height:50vh;
+}
+.container h1{
+    font-size:42px;
+}
+.info{
+    border:2px solid white;
+    min-width:80vw;
+    min-height:10vh;
+    border-radius:2rem;
+    padding:2rem;
+    padding-bottom:1rem;
+    margin-bottom:1rem;
+}
+.info .title{
+    font-weight:1000;
+}
+.info .mark{
+    position:static;
+    top:100%;
+    width:100%;
+    text-align:right;
+}
+.notFound{
+    display:none;
+}

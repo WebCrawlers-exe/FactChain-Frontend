@@ -1,0 +1,100 @@
+.element1{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+.LeftSide{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+}
+form.pubForm{
+    border:2px solid white;
+    border-radius:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    color:white;
+    width:500px;
+    margin-bottom:2rem;
+    /* box-shadow:-15px -15px white; */
+    
+    transition:0.3s all ease;
+}
+form.pubForm:hover{
+    box-shadow: 10px 10px 2px 0px white;
+-webkit-box-shadow: 10px 10px 2px 0px white;
+-moz-box-shadow: 10px 10px 2px 0px white;
+}
+.pubForm input,textarea{
+    font-size:x-large;
+    width:400px;
+    border-radius: 2rem;
+    padding:1rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+textarea{
+    max-width:400px;
+}
+.pubForm input[type="submit"]{
+    font-family:'Poppins';
+    background-color:white;
+    border:2px solid white;
+    width:200px;
+    font-weight:800;
+    cursor: pointer;
+}
+.pubForm input[type="submit"]:hover{
+    background-color:transparent;
+    outline:none;
+    background-color:#cc4300;
+    color:white;
+    
+}
+.pubForm input[type="file"]::file-selector-button{
+    border-radius:2px solid rem;
+}
+
+button.user{
+    padding:1rem;
+    font-size:1rem;
+    background-color:white;
+    border-radius:2rem;
+    border:2px solid white;
+    cursor:pointer;
+    font-weight:800;
+}
+.rightSide{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color:white;
+}
+.walletAddress{
+    border:0.5px solid white;
+    padding:2rem;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.walletAddress .head{
+    font-weight:800;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom:2rem;
+}
+.walletAddress .address{
+    text-align: center;
+    color:#cc4300;
+    letter-spacing: 5px;
+    font-weight:800;
+    /* word-wrap: normal; */
+    /* width:250px; */
+}

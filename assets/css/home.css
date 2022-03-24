@@ -1,0 +1,62 @@
+.element1{
+    display:flex;
+    justify-content:center;
+    padding:2rem;
+}
+.vl{
+    height:450px;
+    border-left:1px solid white;
+    margin-left:2rem;
+    margin-right:8rem;
+}
+.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.motto{
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:2rem;
+    flex-direction: column;
+    font-weight:800;
+    font-size:2rem;
+    line-height:2;
+    letter-spacing:0.5rem;
+}
+.metaMaskbtn a{
+
+    /* text styling */
+    width:fit-content;
+    text-align:center;
+
+    /* flex */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:1rem;
+
+    /* border styling */
+    border:2px solid white;
+    border-radius: 4rem;
+
+    /* font and color */
+    background-color:white;
+    font-weight:800;
+    font-size:xx-large;
+
+    /* transition */
+    transition:0.3s all ease;
+}
+
+.metaMaskbtn a:hover{
+    color:white;
+    background-color: black;
+    cursor:pointer;
+}
+.metaMaskbtn a{
+    text-decoration: none;
+    color:black;
+}
