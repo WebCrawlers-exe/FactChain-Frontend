@@ -39,14 +39,11 @@
     <!-- CONTAINER -->
     <div class="element1">
         <div class="LeftSide">
-            <form class="pubForm">
+            <form target="_blank" method="POST" class="pubForm">
                 <h1>For Users</h1><br>
-                <input type="text" placeholder="Title" required><br>
-                <div class="or">(OR)</div><br>
-                <textarea placeholder="Description of the Article" required></textarea><br>
-                <div class="or">(OR)</div><br>
-                <input type="file" required>
-                <label for="image" style="color:white;">(*jpeg,*png or *jpg formats only)</label><br>
+                <input type="text" name="title" placeholder="Title" required><br>
+                <br>
+                <textarea name="description" placeholder="Description of the Article"></textarea><br><br>
                 <input type="submit" id = "submit" value="Submit">
             </form>
             <button type="button" class="user">For Publishers</button>

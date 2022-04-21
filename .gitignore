@@ -1,0 +1,7 @@
+# Misc Files
+.DS_Store
+
+#env Files
+# USER_ADDRESS = "USER ADDRESS"
+# PRIVATE_KEY = "YOUR META MASK PRIVATE KEY"
+.env

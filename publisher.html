@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- importing font -->
     <style>
@@ -26,7 +27,7 @@
     <nav class="navbar" id="navbar">
       <ul class="navLinks">
         <li>
-          <a href="./index.html"><span class="home">HOME</span></a>
+          <a href="#"><span class="home">HOME</span></a>
         </li>
         <li>
           <a href="#"><span class="home">ABOUT</span></a>
@@ -36,18 +37,19 @@
         </li>
       </ul>
     </nav>
-
+    <div class="loading">
+      <i class="fa fa-spinner fa-spin"></i>
+      <div class="loadtext">&nbsp;Loading... Please wait...</div>
+    </div>
     <!-- CONTAINER -->
     <div class="element1">
+
         <div class="LeftSide">
-            <form class="pubForm" autocomplete="on">
+            <form action="#" method="POST" target="_blank" class="pubForm" autocomplete="on">
                 <h1>For Publishers</h1><br>
-                <input type="text" placeholder="Publisher Name" required><br>
-                <input type="number" placeholder="MPN ID" required><br>
-                <input type="text" placeholder="Title" required><br>
-                <textarea placeholder="Description of the Article" required></textarea><br>
-                <input name ="image" type="file" required>
-                <label for="image" style="color:white;">(*jpeg,*png or *jpg formats only)</label><br>
+                <input type="text" name="publisher" placeholder="Publisher Name" required><br>
+                <input class="titleText" type="text" name="title" placeholder="Title" required><br>
+                <textarea name="description" placeholder="Description" required></textarea><br>
                 <input type="submit" id = "submit" value="Submit">
             </form>
             <button type="button" class="user">Not a Publisher?</button>
@@ -57,10 +59,12 @@
             <img src="./assets/images/Logo.png" height="400px">
             <div class="walletAddress">
                 <div class="head">Your wallet Address</div>
-                <div class="address">0x08c033736AC63454b66E33DFa321a9E54e14474E</div>
+                <div class="address">0x0f21b41E227543fe3765684f8646F2c2E9519AA5</div>
             </div>
         </div>
     </div>
+    
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/apiPost.js"></script>
   </body>
 </html>
