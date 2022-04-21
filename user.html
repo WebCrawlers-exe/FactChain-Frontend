@@ -12,8 +12,9 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/home.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/home.css" /> -->
     <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/user.css">
 
     <!-- importing font -->
     <style>
@@ -41,10 +42,13 @@
         <div class="LeftSide">
             <form target="_blank" method="POST" class="pubForm">
                 <h1>For Users</h1><br>
-                <input type="text" name="title" placeholder="Title" required><br>
+                <input type="radio" id="titleCheck" name="titleCheck" value="1"><label id="titleCheckL" for="titleCheck">ENTER TITLE?</label><br>
+                <input type="radio" id="descCheck" name="descCheck" value="1"><label id="descCheckL" for="descCheck">ENTER DESCRIPTION?</label><br>
+                <input type="text" id="titleInput" name="title" placeholder="Title" required><br>
                 <br>
-                <textarea name="description" placeholder="Description of the Article"></textarea><br><br>
+                <textarea name="description" id="descriptionInput" placeholder="Description of the Article"></textarea><br><br>
                 <input type="submit" id = "submit" value="Submit">
+                <input type="submit" id = "next" value="Next">
             </form>
             <button type="button" class="user">For Publishers</button>
         </div>
